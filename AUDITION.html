@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audition Page</title>
+    <link rel="stylesheet" href="css/styleaudition.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>BUTTER Audition Form</h1></a>
+    </header>
+    <div class="container">
+        <div class="audition-info">
+            <h1>Join Our Audition!</h1>
+            <p>Do you have what it takes to be the next star? Fill out the form below and submit your application to join our audition.</p>
+        </div>
+        <div class="audition-form">
+            <h2>Audition Registration Form</h2>
+            <form action="submit_audition.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+                <label for="talent">Talent (e.g., singing, dancing, acting):</label>
+                <input type="text" id="talent" name="talent" placeholder="Enter your talent" required>
+
+                <label for="message">Tell us why you want to audition:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+
+                <input type="submit" value="Submit Audition">
+            </form>
+        </div>
+    </div>
+    <div class="audition-video" style="text-align:center; margin-top: 20px;">
+        <h2>Watch Our Latest Audition Promo Video!</h2>
+        <iframe width="560" height="315" src="https://youtu.be/KyBJT-1eV2o?si=XZ2i6BKKEP1LdsQ2" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let age = document.getElementById('age').value;
+            let talent = document.getElementById('talent').value;
+    
+            if (name === "" || email === "" || age === "" || talent === "") {
+                alert("All fields are required!");
+                event.preventDefault(); // Mencegah pengiriman form jika ada bidang yang kosong
+            }
+        });
+    </script>
+
+</body>
+</html>

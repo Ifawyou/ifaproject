@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterlly</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href='index.html' class="brand"><img src="corp.png" width="240px" height="78px"></a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="butterly.html">About</a>
+                <a href="Artist Page.html">Artist</a>
+                <a href="Actors Page.html">Actors</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <video class="video-slide active" src="fromis_9 Official MV.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="KISS OF LIFE Official Music Video.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="NCT DREAM MV.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="aespa Life's Too Short.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Red Velvet MV.mp4"  autoplay muted loop></video>
+        <video class="video-slide" src="THE BOYZ MV.mp4"  autoplay muted loop></video>
+        <video class="video-slide" src="TWICE .mp4"  autoplay muted loop></video>
+        <video class="video-slide" src="videoplayback.mp4"  autoplay muted loop></video>
+        <div class="content">
+           <h1>BUTTERLLLY.<br><span>entertaiment</span></h1> 
+           <a href="AUDITION.html">Check This Out</a>
+           <div class="footer">
+            <p>@Butterlly.Corp Reserved</p>
+        </div>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript of responsive navigation menu
+    const menuBtn = document.querySelector('.menu-btn');
+    const navigation = document.querySelector('.navigation');
+
+    menuBtn.addEventListener('click', () => {
+        navigation.classList.toggle('active');
+        menuBtn.classList.toggle('active');
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+
+    var sliderNav = function(manual){
+        btns.forEach((btn) => {
+            btn.classList.remove("active")
+        });
+
+        slides.forEach((slide) => {
+            slide.classList.remove("active")
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            sliderNav(i);
+        });
+    });
+    </script>
+</body>
+</html>
