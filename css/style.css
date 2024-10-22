@@ -1,0 +1,1017 @@
+/* Google Fonts Import Fixed */
+@import url(https://fonts.googleapis.com/css2?famiy=Poppins:wght);
+/* Reset & Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Navigation */
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0  ;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+/* Section */
+section{
+    padding: 100px 200px;
+    background-image: url(https://i.pinimg.com/736x/fd/be/23/fdbe233046e4fcd0f8c31878cfd8f548.jpg);
+}
+
+.main-section{
+    background-color:transparent;
+    padding: 1px 1% 1px 1%;
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/fd/be/23/fdbe233046e4fcd0f8c31878cfd8f548.jpg);
+}
+
+.home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1{
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.home .content a{
+    background: #fff;
+    padding: 15px 35px;
+    color: #FFB0B0;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.home .content .footer{
+        background: transparent;
+        z-index: 888;
+        color: #fff;
+        width: 70%;
+        margin-top: 50px;
+}
+
+.home .content-butter{
+    z-index: 888;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.home .content-butter img{
+    width: 300px;
+    height: 250px;
+    float: right;
+}
+.home .content-butter h1{
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content-butter h2{
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 11px;
+    float: left;
+    margin-left: 415px;
+}
+
+.home .content-butter p{
+    margin-bottom: 9px;
+    float: left;
+    margin-left: 320px;
+}
+
+.home .content-butter .butter-corp{
+    z-index: 888;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.home .content-butter .butter-corp img{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-top: 20px;
+}
+
+.home .content-butter .butter-corp h2{
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 18px;
+    margin-bottom: 9px;
+    float: right;
+    margin-left: 450px;
+}
+
+.home .content-butter .butter-corp p{
+    margin-bottom: 9px;
+    float: right;
+    margin-left: 0px;
+}
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+.home .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(225, 225, 225, 0.5);
+    transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn.active{
+    background: #FFB0B0;
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover{
+    transform: scale(1.2);
+}
+
+.video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+
+@media (max-width: 1040px){
+    header{
+    padding: 12px 20px;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+    .home .media-icons{
+        right: 15px;
+    }
+
+    header .navigation{
+        display: none;
+    }
+
+    header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(1, 1, 1, 0);
+    }
+
+    header .navigation .navigation-items a{
+        color: #222;
+        margin: 20px;
+        font-size: 1.2em;
+    }
+
+    header .navigation .navigation-items a:before{
+        background: #222;
+        height: 5px;
+    }
+
+    header .navigation.active .navigation-items{
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    .menu-btn{
+        background: url(menu.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .menu-btn.active{
+        z-index: 999;
+        background: url(close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+
+}
+
+/* content common */
+.content_wrap {
+    padding: 120px 6px 40px;
+}
+
+.content_wrap .content_tit {
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+.content_wrap .content_tit strong {
+    display: block;
+    position: relative;
+    font-size: 30px;
+    color: #21252C;
+    font-weight: 700; 
+}
+
+.content_wrap .content_tit strong span {
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    margin-left: 4px;
+    font-size: 14px;
+    color: #42474E;
+    font-weight: 400;
+}
+.content_wrap .content_tit .cont_list_btn {
+    overflow-x: auto;
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+        
+.content_wrap .content_tit .cont_list_btn li {
+    display: inline-block;
+    margin-left: 36px; 
+}
+
+.content_wrap .content_tit .cont_list_btn li a {
+    font-size: 14px;
+    color: #42474E;
+    font-weight: 500; 
+}
+
+.content_wrap .content_tit .cont_list_btn li a.active {
+    color: #21252C;
+    font-weight: 700;
+    border-bottom: 1px solid #21252C;
+}
+
+.content_wrap .content_tit .cont_list_btn li:first-child {
+    margin-left: 0; 
+}
+
+.content_wrap .content_tit .cont_list_btn::-webkit-scrollbar {
+    display: none; 
+}
+
+.card {
+    width: 245px;
+    height: 170px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 120px 15px 1px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 10px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+}
+
+.card1{
+    background-image: url(https://i.pinimg.com/enabled_hi/564x/d8/56/bf/d856bfb6c6810c7f7acfc5b8c777ab6f.jpg);
+}
+
+.card2{
+    background-image: url(https://i.pinimg.com/736x/61/74/a8/6174a8ac62cf18ac6b0a7598da182f57.jpg);
+}
+
+.card3{
+    background-image: url(https://cms.disway.id/uploads/9e27adf45527bbfe67b22feb67cb2f8b.jpg);
+}
+
+.card4{
+    background-image: url(https://i.pinimg.com/736x/2e/30/0e/2e300e05d944e232ace560d9530a8f75.jpg);
+}
+
+.card5{
+    background-image: url(https://i.pinimg.com/enabled_hi/736x/53/45/8d/53458d1a8b5ac9bada474eab33596d05.jpg)
+}
+
+.card6{
+    background-image: url(https://i.pinimg.com/736x/e7/52/c5/e752c58b9d60cb4b800cd2428dc43f99.jpg);
+}
+
+.card7{
+    background-image: url(https://i.pinimg.com/enabled/736x/22/54/8f/22548f8c3a20aa444c859a17dd710544.jpg);
+}
+
+.card8{
+    background-image: url(https://i.pinimg.com/736x/f2/16/33/f216338b049f69e670cc43fd380333a6.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+}
+
+.card .media-icons-butter{
+    color: #EB3678;
+    text-decoration: double;
+}
+
+.pastel-section{
+        background-color: transparent;
+        padding: 1%;
+}
+    
+.card-actors{
+    width: 250px;
+    height: 285px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 230px 15px 1px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 5px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.pastel-section-actors {
+    padding: 1px;
+    margin: 10px;
+    background-image: url(https://i.pinimg.com/736x/fd/be/23/fdbe233….jpg);
+}
+.cardA{
+    background-image: url(https://i.mydramalist.com/pqZBD_5c.jpg);
+}
+
+.cardB{
+    background-image: url(https://i.pinimg.com/564x/34/9c/a3/349ca3e590bd4d4a45d8650850f507d8.jpg);
+}
+
+.cardC{
+    background-image: url(https://i.mydramalist.com/6q6Z2_5c.jpg);
+}
+
+.cardD{
+    background-image: url(https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2024/03/19/IMG_20240319_145501-2425618000.jpg);
+}
+
+.cardE{
+    background-image: url(https://i.pinimg.com/enabled_hi/236x/a5/cc/bb/a5ccbb991aa3c7ac786eecde768e6989.jpg)
+}
+
+.cardF{
+    background-image: url(https://vnnmedia.co.id/wp-content/uploads/2024/10/KIm-Yoo-Jung.jpeg);
+}
+
+.cardG{
+    background-image: url(https://i.pinimg.com/enabled_hi/564x/cd/0b/b3/cd0bb3172a7ddb14dbbe64405ce61a1c.jpg);
+}
+
+.cardH{
+    background-image: url(https://i.mydramalist.com/0LVrK_5f.jpg);
+}
+
+.card-actors:hover{
+    transform: translateY(-10px);
+}
+
+.card-actors h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+}
+
+.col .media-icons-artist{
+    z-index: 888;
+    position: absolute;
+    text-align: center;
+    transition: 0.5s ease;
+    margin: 10px;
+    padding-left: 60px;
+}
+
+.col .media-icons-artist a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+
+.col .media-icons-artist a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.col .media-icons-artist a:hover{
+    transform: scale(1.3);
+}
+.cardKArina{
+    background-image: url(https://i.pinimg.com/236x/2b/2d/55/2b2d55e520650620e5d31ab855193764.jpg);
+}
+
+.cardGiselle{
+    background-image: url(https://i.pinimg.com/236x/22/51/94/225194140a60510681a85c8169f68ba1.jpg);
+}
+
+.cardWinter{
+    background-image: url(https://i.pinimg.com/236x/52/84/8a/52848a7ce102ce106a8e88159c9f3660.jpg);
+}
+
+.cardNIng{
+    background-image: url(https://i.pinimg.com/236x/ad/51/6f/ad516f3906b67b95555ae01cdfe270dd.jpg);
+}
+
+.cardNATTY{
+    background-image: url(https://i.pinimg.com/736x/74/ce/f4/74cef44431482041ec442ea03e5e17df.jpg);
+}
+.cardJULIE{
+    background-image: url(https://i.pinimg.com/736x/a1/0a/7c/a10a7c1249eecd4104a08b49789d0e0f.jpg);
+}
+.cardBELLE{
+    background-image: url(https://i.pinimg.com/736x/9a/26/29/9a2629c06c00cd8f3fc9af4d9d9b69eb.jpg);
+}
+.cardHANEUL{
+    background-image: url(https://i.pinimg.com/736x/26/c2/1a/26c21a62589a2e41834d23a2107cca8c.jpg);
+}
+
+.cardMOMO{
+    background-image: url(https://i.pinimg.com/564x/cf/66/2c/cf662cde11ac2cc0d575da020478c358.jpg)
+}
+.cardSANA{
+    background-image: url(https://i.pinimg.com/564x/e5/4c/fc/e54cfc16f8d97ee622f42ed6a824da65.jpg)
+}
+.cardTZUYU{
+    background-image: url(https://i.pinimg.com/564x/83/32/99/83329974151c1defd864a77c967611be.jpg)
+}
+.cardNAYEON{
+    background-image: url(https://i.pinimg.com/564x/5c/51/d2/5c51d20bce856c2d3364e0b61fe121ef.jpg)
+}
+.cardMINA{
+    background-image: url(https://i.pinimg.com/564x/8b/e4/1a/8be41ac56fdcf48e78a97b05f4395512.jpg)
+}
+.cardJIHYO{
+    background-image: url(https://i.pinimg.com/736x/17/b0/a4/17b0a4ddf0944eb21f8876de3bb40014.jpg)
+}
+.cardCHAEYUONG{
+    background-image: url(https://i.pinimg.com/564x/e2/cd/18/e2cd18cbfd82dcf24ea39fa74219c75b.jpg)
+}
+.cardDAHYUN{
+    background-image: url(https://i.pinimg.com/564x/4b/b0/8c/4bb08c1e4c3bf62df64c89d39cbb5b8b.jpg)
+}
+.cardJEONGYEON{
+    background-image: url(https://i.pinimg.com/564x/d8/46/1f/d8461ff248a977ef9589490961839de2.jpg)
+}
+
+.cardSUNWOO{
+    background-image: url(https://i.pinimg.com/736x/34/70/12/347012df12795f873d00f515747238ba.jpg)
+}
+.cardJUYEON{
+    background-image: url(https://i.pinimg.com/736x/33/60/59/3360599345d2d5ca67a7ef9d182420b3.jpg)
+}
+.cardHYUNJAE{
+    background-image: url(https://i.pinimg.com/736x/46/bd/a9/46bda9124d147ce9673507d00ce3398b.jpg)
+}
+.cardERIC{
+    background-image: url(https://i.pinimg.com/736x/f7/fc/13/f7fc13a68fa1a4a31f27849a374fff4c.jpg)
+}
+.cardNEW{
+    background-image: url(https://i.pinimg.com/736x/dc/f0/e5/dcf0e55709c07463d3e5e609121f1e44.jpg)
+}
+.cardSANGYEON{
+    background-image: url(https://i.pinimg.com/736x/10/81/00/1081008df1cc70dc39bd97340e490c2b.jpg)
+}
+.cardQ{
+    background-image: url(https://i.pinimg.com/564x/bd/d6/71/bdd671066cf6f48a02ef4dd047b5426d.jpg)
+}
+.cardKEVIN{
+    background-image: url(https://i.pinimg.com/564x/bc/ff/ef/bcffeff4821b4de962e1859926729813.jpg)
+}
+.cardJACOB{
+    background-image: url(https://i.pinimg.com/736x/38/c3/f3/38c3f3bb196788fd2a61aff6f0089100.jpg)
+}
+.cardYOUNGHOON{
+    background-image: url(https://i.pinimg.com/736x/f9/27/4d/f9274da0dc94749ff70069381a7b91ed.jpg)
+}
+
+.cardMARK{
+    background-image: url(https://i.pinimg.com/736x/cd/37/8d/cd378d2d7cf033a126faadb8ee25847b.jpg)
+}
+.cardJENO{
+    background-image: url(https://i.pinimg.com/564x/ee/0b/a2/ee0ba291511aa074c97ae6bab2251ed9.jpg)
+}
+.cardHAECHAN{
+    background-image: url(https://i.pinimg.com/736x/3f/89/13/3f89139cddc83582230f6e5955814d39.jpg)
+}
+.cardJAEMIN{
+    background-image: url(https://i.pinimg.com/564x/f2/86/be/f286beba2469464fa0fb40247b4d3107.jpg)
+}
+.cardJISUNG{
+    background-image: url(https://i.pinimg.com/736x/db/a9/87/dba98718c62c1deca85fd20e8ab948ed.jpg)
+}
+.cardCHENLE{
+    background-image: url(https://i.pinimg.com/736x/b3/99/59/b399598df788549effc0c441fb00b60f.jpg)
+}
+.cardRENJUN{
+    background-image: url(https://i.pinimg.com/564x/29/c8/81/29c88157846e3d27d4a499367b036ef6.jpg)
+}
+
+.cardSAN{
+    background-image: url(https://i.pinimg.com/564x/d1/7c/d7/d17cd7a9c9df476e64265a95a558dcf5.jpg)
+}
+.cardSEONGHWA{
+    background-image: url(https://i.pinimg.com/236x/19/84/a9/1984a93300b597c3a54a18a5e852820d.jpg)
+}
+.cardWOOYOUNG{
+    background-image: url(https://i.pinimg.com/236x/0c/1b/fc/0c1bfc27b80f90668543cb84fc08d0b0.jpg)
+}
+.cardHONGJOONG{
+    background-image: url(https://i.pinimg.com/236x/19/15/bd/1915bd5472ae955d1fc4be4e37d5d7b2.jpg)
+}
+.cardYEOSANG{
+    background-image: url(https://i.pinimg.com/236x/62/8e/d5/628ed54be10338c72d22a6c8b9a62caf.jpg)
+}
+.cardMINGI{
+    background-image: url(https://i.pinimg.com/236x/ed/72/a4/ed72a429b325248e58b3405168c785dd.jpg)
+}
+.cardYUNHO{
+    background-image: url(https://i.pinimg.com/236x/77/12/e4/7712e4437070d0da9af2aea7bf289816.jpg)
+}
+.cardJONGHO{
+    background-image: url(https://i.pinimg.com/236x/f8/33/c0/f833c0244bb8c9b73536bc309a344431.jpg)
+}
+
+.cardIRENE{
+    background-image: url(https://i.pinimg.com/enabled_hi/474x/8b/0c/e2/8b0ce23da015797ed1707e973c42b5f6.jpg)
+}
+.cardYERI{
+    background-image: url(https://i.pinimg.com/474x/02/a0/5c/02a05cf1ba06fc637842128d961adb11.jpg)
+}
+.cardWENDY{
+    background-image: url(https://i.pinimg.com/474x/c0/0c/5c/c00c5c5781547f19d1e2a9350fcaa76d.jpg)
+}
+.cardSEULGI{
+    background-image: url(https://i.pinimg.com/enabled_hi/474x/c7/2e/8a/c72e8a46e89ce44c230ba4d80c31d5c0.jpg)
+}
+.cardJOY{
+    background-image: url(https://i.pinimg.com/474x/a2/2d/2a/a22d2a7b6b7869dd16bd7b622068a962.jpg)
+}
+
+.cardJAEHYUN{
+    background-image: url(https://i.pinimg.com/474x/e5/08/08/e5080815c827f61399354f4b980a4b62.jpg)
+}
+.cardLEEHAN{
+    background-image: url(https://i.pinimg.com/474x/b5/17/63/b51763753d287c33be2f7d3fb625b288.jpg)
+}
+.cardTAESAN{
+    background-image: url(https://i.pinimg.com/736x/44/8e/90/448e9016f09f4694219d8bdfc4e9e426.jpg)
+}
+.cardWOONHAK{
+    background-image: url(https://i.pinimg.com/474x/32/62/a8/3262a8311e532ae07483c940bd3469a0.jpg)
+}
+.cardSUNGHO{
+    background-image: url(https://i.pinimg.com/474x/69/a1/da/69a1da82f2cc215f7fda617a08e351d2.jpg)
+}
+.cardRIWOO{
+    background-image: url(https://i.pinimg.com/474x/ac/d0/a6/acd0a638fc6748810c123b8ee0873d3c.jpg)
+}
+
+.container {
+    margin: 10px;
+    padding: 20px;
+}
+
+.container .img {
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container .img video{
+    width: 728px;
+    object-fit: contain;
+}
+
+.container .img p{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+}
+
+.profile{
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    font-size: larger;
+}
+
+.profile ul li{
+    text-align: center;
+    list-style: none;
+}
+footer {
+    position: relative;
+    overflow: hidden;
+    padding: 69px 40px 60px;
+    background: #86A7FC;
+}
+
+.main .ly_flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album_list_cont {
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.album_list_cont ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.album_list_cont ul li {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+}
+
+.album_list_cont ul li .album_img {
+    display: block;
+    position: relative;
+    width: calc(100% - 25px);
+}
+
+.album_list_cont ul li .album_img .album_plus {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 20%;
+    height: 100%;
+    background-color: #00000082;
+    transition: all 0.2s;
+}
+
+.album_list_cont ul li .album_img.album_plus .plus_ico{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 64px;
+    height: 64px;
+    margin-left: -32px;
+    margin-top: -32px;
+    background-image: url(../images/album_plus_ico.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.album_list_cont ul li .album_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.album_list_cont ul li .album_info {
+    width: calc(100% - 25px);
+    margin-top: 10px;
+}
+
+.album_list_cont ul li .album_info a {
+    text-align: center;
+}
+
+a {
+    color: #101010;
+    text-decoration: none;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.album_list_cont ul li .album_info a .album_info_txt p:first-child {
+    padding-left: 0;
+}
+
+.album_list_cont ul li .album_info a .album_info_txt p {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    font-size: 12px;
+    color: #868E9B;
+    font-weight: 400;
+}
+
+.album_list_cont ul li .album_info a .album_info_txt p:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 1;
+    width: 1px;
+    height: 10px;
+    background-color: #868E9B;
+    vertical-align: middle;
+}
+
+.album_list_cont ul li .album_info a strong {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .album_list_cont ul li {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .album_list_cont ul li {
+        width: 100%;
+    }
+}
+
+footer .sns_box {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+footer .sns_box li {
+    margin-right: 12px;
+    color: #fff;
+    list-style: none;
+    width: 10%;
+    height: 120%;
+    margin: 95%;
+}
+
+footer .sns_box li a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    margin: 2%;
+
+}
+
+footer .sns_box li a img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+footer .ly_flex:last-child {
+    margin-top: 25px;
+    align-items: flex-end;
+}
+
+.main .ly_flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .ly_flex {
+    justify-content: space-between;
+}
+
+.ly_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .f_gnb {
+    color: #fff;
+}
+
+.font_Klavika {
+    font-family: "klavika-web", sans-serif;
+    font-style: normal;
+}
+
+footer .f_gnb span {
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #888888;
+}
+
+footer .f_gnb ul {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+footer .f_gnb ul li a {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+footer .info_box {
+    color: #888;
+    text-align: right;
+}
+
+footer .info_box ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+footer .info_box ul li {
+    margin-left: 24px;
+    font-size: 0.89rem;
+}
+
+footer .info_box p {
+    font-weight: 600;
+    font-size: 0.78rem;
+}
